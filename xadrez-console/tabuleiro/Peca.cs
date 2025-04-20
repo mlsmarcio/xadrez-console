@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using tabuleiro;
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
-    class Peca
+    public class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; } // PODE SER ALTERADO POR ELA MESMA E PELAS SUBCLASSES DELA
