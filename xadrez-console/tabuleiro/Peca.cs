@@ -14,5 +14,14 @@
             this.tab = tab;
             this.qteMovimentos = 0;
         }
+
+        public void IncrementarMovimentos()
+        {
+            qteMovimentos++;
+        }
+
+        // NÃO É POSSÍVEL IMPLEMENTAR O MÉTODO NESSA CLASSE GENÉRICA. DEFINI-SE O MÉTODO COMO ABASTRATO
+        // ENTÃO A CLASSE PASSA A SER ABSTRATA PORQUE PARA ISSO É NECESSÁRIO TER PELO MENOS UM MÉTODO ABSTRATO
+        //public abstract bool[,] movimentosPossiveis();
     }
 }
