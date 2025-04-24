@@ -1,6 +1,6 @@
 ﻿namespace tabuleiro
 {
-    public class Peca
+    public abstract class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; } // PODE SER ALTERADO POR ELA MESMA E PELAS SUBCLASSES DELA
@@ -22,6 +22,6 @@
 
         // NÃO É POSSÍVEL IMPLEMENTAR O MÉTODO NESSA CLASSE GENÉRICA. DEFINI-SE O MÉTODO COMO ABASTRATO
         // ENTÃO A CLASSE PASSA A SER ABSTRATA PORQUE PARA ISSO É NECESSÁRIO TER PELO MENOS UM MÉTODO ABSTRATO
-        //public abstract bool[,] movimentosPossiveis();
+        public abstract bool[,] movimentosPossiveis();
     }
 }
